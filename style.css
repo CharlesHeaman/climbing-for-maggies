@@ -1,0 +1,166 @@
+:root {
+    --layer-offset: 200px;
+    --scale-multiplier: 0.5;
+
+    --text-color: white;
+    --text-shadow: 1px 1px black;
+}
+
+h1 {
+    color: var(--text-color);;
+    font-size: 5em;
+    font-weight: 200;
+    margin: 0;
+    text-shadow: var(--text-shadow);
+}
+
+h2 {
+    color: var(--text-color);;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: -15px;
+    text-shadow: var(--text-shadow);
+}
+
+h3 {
+    color: var(--text-color);;
+    font-size: 1.125em;
+    margin: 0;
+    text-shadow: var(--text-shadow);
+}
+
+p {
+    color: var(--text-color);;
+    font-size: 0.9em;
+    margin: 0;
+    text-shadow: var(--text-shadow);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: black;
+    font-family: 'Recoleta', sans-serif;
+}
+
+
+.info-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.text-wrapper {
+    max-width: 1000px;
+    padding: 2em 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-info-grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.additional-info-grid img {
+    width: 40px;
+    filter: invert(1) drop-shadow(2px 2px black);
+}
+
+.additional-info-grid a {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.additional-info-grid a:hover {
+    transform: scale(1.05);
+}
+
+.parallax {
+    perspective: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.parallax__cover {
+    background: #2E4356;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+}
+
+.parallax__layer__1 {
+    transform: translateZ(calc(var(--layer-offset) * -1)) scale(calc(calc(var(--scale-multiplier) * 1) + 1));
+}
+
+.parallax__layer__2 {
+    transform: translateZ(calc(var(--layer-offset) * -2)) scale(calc(calc(var(--scale-multiplier) * 2) + 1));
+}
+
+.parallax__layer__3 {
+    transform: translateZ(calc(var(--layer-offset) * -3)) scale(calc(calc(var(--scale-multiplier) * 3) + 1));
+}
+
+.parallax__layer__4 {
+    transform: translateZ(calc(var(--layer-offset) * -4)) scale(calc(calc(var(--scale-multiplier) * 4) + 1));
+}
+
+.parallax__layer__5 {
+    transform: translateZ(calc(var(--layer-offset) * -5)) scale(calc(calc(var(--scale-multiplier) * 5) + 1));
+}
+
+.parallax__layer__6 {
+    transform: translateZ(calc(var(--layer-offset) * -6)) scale(calc(calc(var(--scale-multiplier) * 6) + 1));
+} 
+
+.parallax__layer__7 {
+    transform: translateZ(calc(var(--layer-offset) * -7)) scale(calc(calc(var(--scale-multiplier) * 7) + 1));
+} 
+
+.parallax__layer__8 {
+    transform: translateZ(calc(var(--layer-offset) * -8)) scale(calc(calc(var(--scale-multiplier) * 8) + 1));
+} 
+
+.parallax__layer__9 {
+    transform: translateZ(calc(var(--layer-offset) * -9)) scale(calc(calc(var(--scale-multiplier) * 9) + 1));
+} 
